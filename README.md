@@ -17,9 +17,9 @@
   
 -	![life expectancy image](https://github.com/user-attachments/assets/d5b18f36-4e4f-4057-bc2a-2d2207e20df8)
   
-- ![python image](https://github.com/user-attachments/assets/b4320805-ddc1-4ad1-adc2-0c9a8714cfce)
+  ![python image](https://github.com/user-attachments/assets/b4320805-ddc1-4ad1-adc2-0c9a8714cfce)
 
-- Find the outliers using the boxplot method for mileage based on the cylinder type and select Python script visual from visuals. Select : “Life Expectancy”,”Adult Mortality”,”under-five-death columns, then write the below code and click on Run.
+- Find the outliers using the boxplot method for mileage based on the cylinder type and select Python script visual from visuals. Select: “Life Expectancy”,”Adult Mortality”,”under-five-death columns, then write the below code and click on Run.
   - import matplotlib.pyplot as plt
   - plt.figure(figsize=(20, 20))
   - dataset.plot(kind = "box", layout = (2,2))
@@ -39,20 +39,17 @@
 -	For 3rd visual print bar plot for average life expectancy for each country for which select Python script visual from visuals, select “country”, “GDP”, ”Life Expetancy” columns, then write the below code and finally click on Run (triangle button on the corner of the script view). 
  - import matplotlib.pyplot as plt 
  - plt.rc('xtick', labelsize=20) 
-  -data = dataset.groupby(["Country"])["Life expectancy "].mean() 
-  -plt.figure(figsize=(15, 40)) 
-  -cols = dataset["Country"].unique() # creating the bar plot 
-  -plt.barh(cols,data, color ='maroon',height = 0.6,align='center') 
-  -plt.show()
+ - data = dataset.groupby(["Country"])["Life expectancy "].mean() 
+ - plt.figure(figsize=(15, 40)) 
+ - cols = dataset["Country"].unique() # creating the bar plot 
+ - plt.barh(cols,data, color ='maroon',height = 0.6,align='center') 
+ - plt.show()
 
 -	For 4th visual create a correlation plot for all numeric fields and select Python script visual from visuals. Select the asked columns, then write the below code and click on Run. 
-- import seaborn as sns
- import matplotlib.pyplot as plt
- hm = sns.heatmap(dataset.corr(),annot = True)
- plt.show()
-
-
-
+ - import seaborn as sns
+ - import matplotlib.pyplot as plt
+ - hm = sns.heatmap(dataset.corr(),annot = True)
+ - plt.show()
 
 ## Insights/Conclusion:
 
