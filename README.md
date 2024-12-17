@@ -36,20 +36,22 @@
   -  plt.xticks(fontsize=30)
   - plt.show()
   
--	For 3rd visual print bar plot for average life expectancy for each country for which select Python script visual from visuals, select “country”, “GDP”, ”Life Expetancy” columns, then write the below code and finally click on Run (triangle button on the corner of the script view). 
- - import matplotlib.pyplot as plt 
- - plt.rc('xtick', labelsize=20) 
- - data = dataset.groupby(["Country"])["Life expectancy "].mean() 
- - plt.figure(figsize=(15, 40)) 
- - cols = dataset["Country"].unique() # creating the bar plot 
- - plt.barh(cols,data, color ='maroon',height = 0.6,align='center') 
- - plt.show()
+-	For 3rd visual print bar plot for average life expectancy for each country for which select Python script visual from visuals, select 
+  “country”, “GDP”, ”Life Expetancy” columns, then write the below code and finally click on Run (triangle button on the corner of the 
+  script view). 
+  - import matplotlib.pyplot as plt 
+  - plt.rc('xtick', labelsize=20) 
+  - data = dataset.groupby(["Country"])["Life expectancy "].mean() 
+  - plt.figure(figsize=(15, 40)) 
+  - cols = dataset["Country"].unique() # creating the bar plot 
+  - plt.barh(cols,data, color ='maroon',height = 0.6,align='center') 
+  - plt.show()
 
 -	For 4th visual create a correlation plot for all numeric fields and select Python script visual from visuals. Select the asked columns, then write the below code and click on Run. 
- - import seaborn as sns
- - import matplotlib.pyplot as plt
- - hm = sns.heatmap(dataset.corr(),annot = True)
- - plt.show()
+  - import seaborn as sns
+  - import matplotlib.pyplot as plt
+  - hm = sns.heatmap(dataset.corr(),annot = True)
+  - plt.show()
 
 ## Insights/Conclusion:
 
