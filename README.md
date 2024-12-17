@@ -1,19 +1,22 @@
 
 # Life Expectancy Analysis Report using python script
 
-##Obejective:
+## Obejective:
 - Life expectancy is influenced by a variety of factors, including population, disease prevalence, GDP, and income levels. Here's a brief overview of how each of these factors can impact life expectancy
 
-##Dataset:
+## Dataset:
 - <a href="https://github.com/jagrutibhagwat29/Life-Expectancy-Analysis-using-Python/blob/main/Life%20Expectancy%20Data.csv">Dataset</a>
 
-##How to call data in to python script:
-- Import pandas as pd Dataset=pd.read_csv(“dataset location in your system/Life Expectancy Data.csv”
+## How to call data in to python script:
+- Import pandas as pd
+- Dataset=pd.read_csv(“dataset location in your system/Life Expectancy Data.csv”
   
 ##Process:
 -	Data Sourcing followed by data cleansing and then data manipulation in query editor.
 -	Data transformation for visualisation as follows
+  
 -	![life expectancy image](https://github.com/user-attachments/assets/d5b18f36-4e4f-4057-bc2a-2d2207e20df8)
+  
 - ![python image](https://github.com/user-attachments/assets/b4320805-ddc1-4ad1-adc2-0c9a8714cfce)
 
 - Find the outliers using the boxplot method for mileage based on the cylinder 
