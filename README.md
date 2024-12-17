@@ -11,7 +11,7 @@
 - Import pandas as pd
 - Dataset=pd.read_csv(“dataset location in your system/Life Expectancy Data.csv”
   
-##Process:
+## Process:
 -	Data Sourcing followed by data cleansing and then data manipulation in query editor.
 -	Data transformation for visualisation as follows
   
@@ -19,10 +19,8 @@
   
 - ![python image](https://github.com/user-attachments/assets/b4320805-ddc1-4ad1-adc2-0c9a8714cfce)
 
-- Find the outliers using the boxplot method for mileage based on the cylinder 
- type and select Python script visual from visuals. Select : “Life Expectancy”,”Adult Mortality”,”under-five-death columns, then write 
- the below code and click on Run. 
-import matplotlib.pyplot as plt
+- Find the outliers using the boxplot method for mileage based on the cylinder type and select Python script visual from visuals. Select : “Life Expectancy”,”Adult Mortality”,”under-five-death columns, then write the below code and click on Run. 
+* import matplotlib.pyplot as plt
 plt.figure(figsize=(20, 20))
 dataset.plot(kind = "box", layout = (2,2))
 plt.show()
