@@ -9,13 +9,13 @@
 
 ## How to call data in to python script:
 - Import pandas as pd
-- Dataset=pd.read_csv(“dataset location in your system/Life Expectancy Data.csv”
+- Dataset=pd.read_csv(“dataset location in your system/Life Expectancy Data.csv”)
   
 ## Process:
 -	Data Sourcing followed by data cleansing and then data manipulation in query editor.
 -	Data transformation for visualisation as follows
   
--	![life expectancy image](https://github.com/user-attachments/assets/d5b18f36-4e4f-4057-bc2a-2d2207e20df8)
+	![life expectancy image](https://github.com/user-attachments/assets/d5b18f36-4e4f-4057-bc2a-2d2207e20df8)
   
   ![python image](https://github.com/user-attachments/assets/b4320805-ddc1-4ad1-adc2-0c9a8714cfce)
 
@@ -33,25 +33,25 @@
   - GDPvalue = dataset.groupby("Population")["GDP"].sum().nlargest(10).index
   - plt.scatter(GDPvalue,topGDP,s=600,c='Red')
   - plt.yticks(fontsize=30)
-  -  plt.xticks(fontsize=30)
+  - plt.xticks(fontsize=30)
   - plt.show()
   
 -	For 3rd visual print bar plot for average life expectancy for each country for which select Python script visual from visuals, select 
   “country”, “GDP”, ”Life Expetancy” columns, then write the below code and finally click on Run (triangle button on the corner of the 
   script view). 
-  - import matplotlib.pyplot as plt 
-  - plt.rc('xtick', labelsize=20) 
-  - data = dataset.groupby(["Country"])["Life expectancy "].mean() 
-  - plt.figure(figsize=(15, 40)) 
-  - cols = dataset["Country"].unique() # creating the bar plot 
-  - plt.barh(cols,data, color ='maroon',height = 0.6,align='center') 
-  - plt.show()
+   - import matplotlib.pyplot as plt 
+   - plt.rc('xtick', labelsize=20) 
+   - data = dataset.groupby(["Country"])["Life expectancy "].mean() 
+   - plt.figure(figsize=(15, 40)) 
+   - cols = dataset["Country"].unique() # creating the bar plot 
+   - plt.barh(cols,data, color ='maroon',height = 0.6,align='center') 
+   - plt.show()
 
 -	For 4th visual create a correlation plot for all numeric fields and select Python script visual from visuals. Select the asked columns, then write the below code and click on Run. 
-  - import seaborn as sns
-  - import matplotlib.pyplot as plt
-  - hm = sns.heatmap(dataset.corr(),annot = True)
-  - plt.show()
+   - import seaborn as sns
+   - import matplotlib.pyplot as plt
+   - hm = sns.heatmap(dataset.corr(),annot = True)
+   - plt.show()
 
 ## Insights/Conclusion:
 
