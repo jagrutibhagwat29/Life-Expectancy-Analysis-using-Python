@@ -20,30 +20,30 @@
 - ![python image](https://github.com/user-attachments/assets/b4320805-ddc1-4ad1-adc2-0c9a8714cfce)
 
 - Find the outliers using the boxplot method for mileage based on the cylinder type and select Python script visual from visuals. Select : “Life Expectancy”,”Adult Mortality”,”under-five-death columns, then write the below code and click on Run.
-- import matplotlib.pyplot as plt
-  plt.figure(figsize=(20, 20))
-  dataset.plot(kind = "box", layout = (2,2))
-  plt.show()
+  - import matplotlib.pyplot as plt
+  - plt.figure(figsize=(20, 20))
+  - dataset.plot(kind = "box", layout = (2,2))
+  - plt.show()
 
 - For 2nd visual create a scatter plot for top 10 GDP against their population. Create a new page and select Python script visual from 
   visuals. Select GDP, and Population column, then write the below code and click on Run. 
   - import matplotlib.pyplot as plt
-    plt.figure(figsize=(20, 20))
-    topGDP = dataset['GDP'].nlargest(n=10)
-    GDPvalue = dataset.groupby("Population")["GDP"].sum().nlargest(10).index
-    plt.scatter(GDPvalue,topGDP,s=600,c='Red')
-    plt.yticks(fontsize=30)
-    plt.xticks(fontsize=30)
-    plt.show()
+  - plt.figure(figsize=(20, 20))
+  - topGDP = dataset['GDP'].nlargest(n=10)
+  - GDPvalue = dataset.groupby("Population")["GDP"].sum().nlargest(10).index
+  - plt.scatter(GDPvalue,topGDP,s=600,c='Red')
+  - plt.yticks(fontsize=30)
+  -  plt.xticks(fontsize=30)
+  - plt.show()
   
 -	For 3rd visual print bar plot for average life expectancy for each country for which select Python script visual from visuals, select “country”, “GDP”, ”Life Expetancy” columns, then write the below code and finally click on Run (triangle button on the corner of the script view). 
-- import matplotlib.pyplot as plt 
-  plt.rc('xtick', labelsize=20) 
-  data = dataset.groupby(["Country"])["Life expectancy "].mean() 
-  plt.figure(figsize=(15, 40)) 
-  cols = dataset["Country"].unique() # creating the bar plot 
-  plt.barh(cols,data, color ='maroon',height = 0.6,align='center') 
-  plt.show()
+ - import matplotlib.pyplot as plt 
+ - plt.rc('xtick', labelsize=20) 
+  -data = dataset.groupby(["Country"])["Life expectancy "].mean() 
+  -plt.figure(figsize=(15, 40)) 
+  -cols = dataset["Country"].unique() # creating the bar plot 
+  -plt.barh(cols,data, color ='maroon',height = 0.6,align='center') 
+  -plt.show()
 
 -	For 4th visual create a correlation plot for all numeric fields and select Python script visual from visuals. Select the asked columns, then write the below code and click on Run. 
 - import seaborn as sns
